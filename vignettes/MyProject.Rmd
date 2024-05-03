@@ -1,0 +1,64 @@
+---
+title: "Shows working functions for MATH4753 Functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Shows working functions for MATH4753 Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753JUSTIN24)
+```
+
+# myquad
+
+```{r}
+MATH4753JUSTIN24::myquad(25)
+```
+
+# mymult
+
+```{r}
+MATH4753JUSTIN24::mymult(iter = 100, n = 10, p = c(1,1,1) / 4)
+```
+
+# myplot 
+
+```{r}
+MATH4753JUSTIN24::myplot(25)
+```
+
+# myncurve
+
+```{r}
+MATH4753JUSTIN24::myncurve(5, 10)
+```
+
+# mycltb 
+
+```{r}
+MATH4753JUSTIN24::mycltb(10,iter = 1000 ,p=0.5)
+```
+?myboot
+# myboot2
+
+```{r}
+MATH4753JUSTIN24::myboot2(iter = 10000, x = 5, fun = "mean", alpha = 0.05, cx = 1.5)
+```
+
+# fire data set
+
+```{r}
+MATH4753JUSTIN24::fire
+```
+
+
+
